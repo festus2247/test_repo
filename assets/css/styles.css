@@ -398,11 +398,13 @@ body.dark-theme{
 .home__images{
   display: grid;
   margin-top: 3rem;
+ 
 }
 .home__article,
 .home__img{
   width: 220px;
   transition: scale .4s;
+  
 }
 .home__article{
   scale: .8;
@@ -824,17 +826,15 @@ transform: translateX(-1rem) rotate(10deg);
   
  
 }
-@media screen and (min-width: 768px){
 
-}
 /* For large devices */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1150px){
  .section{
   padding-block: 7rem 2rem;
  }
  .nav{
-  height: calc(--header-height) + 2rem;
-  column-gap: 10rem;
+  height: calc(var(--header-height) + 1rem);
+  column-gap: 8rem;
  }
  .nav__link i{
   display: none;
@@ -858,8 +858,9 @@ transform: translateX(-1rem) rotate(10deg);
  }
  .home__data{
   width: initial;
-  justify-content: center;
+
  }
+ 
  .home__article{
   justify-content: center;
   position: relative;
@@ -878,4 +879,87 @@ transform: translateX(-1rem) rotate(10deg);
     justify-content: space-between;
     align-items: center;
   }
+  .discount__data{
+    order: 1;
+  }
+  .discount__data,
+  .discount__title{
+    text-align: initial;
+  }
+  .discount__img-1,
+  .discount__img-2{
+    width: 300px;
+  }
+  .new__container{
+    padding-top: 2rem ;
+   grid-template-rows:4rem ;
+  }
+  .new__card{
+    padding: 1.5rem;
+  }
+  .new__img{
+    width: 120px;
+  }
+  .new__title{
+    font-size: var(--h3-font-size);
+  }
+  .join__bg{
+    object-position: 0 -5rem;
+  }
+  .testimonial__container{
+    padding-top: 2rem;
+  }
+  .testimonial__card{
+    padding-right: 2rem;
+  }
+  .testimonial__title{
+    font-size: var(--h3-font-size);
+  }
+  .testimonial__description{
+    font-size: var(--normal-font-size);
+  }
+  .footer{
+    padding-block: 6rem 3rem;
+  }
+  .footer__data{
+    grid-template-columns: repeat(4 max-content);
+    column-gap: 4.5rem;
+  }
+  .footer__logo,
+  .footer__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: 1.5rem;
+  }
+  .footer__links{
+    row-gap: 1rem;
+  }
+  .footer__social{
+    column-gap: 1.5rem;
+  }
+  .footer__copy{
+    margin-top: 7.5rem;
+  }
+  .footer__social-link{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .container{
+    margin-inline: auto;
+  }
+  .home__container{
+    grid-template-columns: 435px 745px;
+    align-items: center;
+    padding-block: 7rem 2rem;
+  }
+  .home__data{
+    text-align: initial;
+  }
+  .home__description{
+    margin-bottom: 4rem;
+  }
+ 
+  
+ 
+
 }
